@@ -21,7 +21,7 @@ body {
 
 body .app__videos {
   position: relative;
-  height: 750px;
+  height: 100vh;
   background-color: white;
   overflow: scroll;
   width: 100%;
