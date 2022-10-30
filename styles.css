@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: cursive;
+}
+
+html {
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+}
+
+body {
+  color: black;
+  background-color: black;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+body .app__videos {
+  position: relative;
+  height: 750px;
+  background-color: white;
+  overflow: scroll;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body .app__videos::-webkit-scrollbar {
+  display: none;
+}
+
+body .app__videos .video {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  scroll-snap-align: start;
+}
+
+body .app__videos .video .video__player {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+body .app__videos .video .videoHeader {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .app__videos .video .videoHeader > * {
+  padding: 20px;
+}
+
+body .app__videos .video .videoFooter {
+  position: relative;
+  bottom: 100px;
+  margin-left: 20px;
+}
+
+body .app__videos .video .videoFooter a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body .app__videos .video .videoFooter .user__avatar {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+body .app__videos .video .videoFooter .videoFooter__text {
+  position: absolute;
+  bottom: 0;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 45px;
+}
+
+body .app__videos .video .videoFooter .videoFooter__text h3 {
+  margin-left: 10px;
+}
+
+body .app__videos .video .videoFooter .videoFooter__text h3 a {
+  text-decoration: none;
+  color: white;
+  font-weight: 900;
+  font-size: 0.8rem;
+  text-transform: inherit;
+  background: black;
+  border: none;
+  padding: 7px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+body .app__videos .video .videoFooter .videoFooter__text h3 a:hover {
+  text-decoration: none;
+}
+
+body .app__videos .video .videoFooter .videoFooter__ticker {
+  width: 30%;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+body .app__videos .video .videoFooter .videoFooter__ticker marquee {
+  font-size: 12px;
+  padding-top: 7px;
+  color: black;
+}
+
+body .app__videos .video .videoFooter .videoFooter__ticker .material-icons {
+  position: absolute;
+  left: 5px;
+  color: black;
+}
+
+body .app__videos .video .videoFooter .videoFooter__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  width: 95%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: black;
+}
+
+body .app__videos .video .videoFooter .videoFooter__actions:hover {
+  color: white;
+}
+
+body .app__videos .video .videoFooter .videoFooter__actions .videoFooter__actionsLeft {
+  padding: 0 7px;
+  font-size: 1.6em;
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles.css.map */
